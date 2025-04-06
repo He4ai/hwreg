@@ -62,7 +62,7 @@ def find_id():
 
 def create_new_file(list):
     with open('phonebook.csv', 'w', encoding='utf-8-sig', newline='') as file:
-        datawriter = csv.writer(file, delimiter=';')
+        datawriter = csv.writer(file, delimiter=',')
         datawriter.writerows(list)
 
 
